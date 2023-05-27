@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+.home-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(12, 11, 30);
+  font-family: "Roboto";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.home-container .login-form {
+  background-color: rgb(17, 16, 45);
+  height: 14rem;
+  padding: 2rem;
+  border-radius: .88rem;
+  color: #fff;
+  width: 20rem;
+  max-width: 90%;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-group {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.btn {
+  cursor: pointer;
+  padding: .55rem .88rem;
+  outline: none;
+  border: none;
+  border-radius: .33rem;
+  transition: all .3s ease-in-out;
+  font-weight: bold;
+  font-size: .90rem;
+}
+
+.btn-join {
+  background-color: #4aed88;
+  margin-top: .89rem;
+  display: flex;
+  margin-left: auto;
+
+}
+
+.btn-join:hover,
+.btn-copy-room:hover {
+  background-color: rgb(30, 160, 78);
+}
+
+
+.form-heading {
+  margin-top: 0;
+}
+
+
+
+.input {
+  padding: .44rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: .24rem;
+  font-family: "Roboto";
+  margin: .62rem 0;
+  width: 95%;
+  background-color: #ddd;
+}
+
+.join-info {
+  color: #aaa;
+  font-size: .88rem;
+  text-align: center;
+  position: absolute;
+  bottom: 1rem;
+}
+
+.join-info a {
+  color: rgb(19, 212, 90);
+}
+
+
+.editor-container {
+  display: grid;
+  grid-template-columns: 18rem 1fr;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.editor-sidebar {
+  background-color: rgb(29, 27, 67);
+  padding: .5rem .88rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.client-list {
+  flex: 1;
+}
+
+
+.btn-copy-room {
+  background-color: #4aed88;
+}
+
+.editor-sidebar-footer {
+  display: flex;
+  flex-direction: column;
+  gap: .88rem;
+}
+
+.editor-text {
+  background-color: rgb(12, 11, 30);
+  font-size: 1.1rem;
+}
+
+.avatar-container {
+  height: .3rem;
+  width: .3rem;
+  padding: .99rem;
+  color: #000;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border-radius: 50%;
 }
 
-.App-link {
-  color: #61dafb;
+.client {
+  display: flex;
+  font-weight: bold;
+  font-size: 1rem;
+  align-items: center;
+  gap: .55rem;
+  margin: .77rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CodeMirror {
+  height: calc(100vh - 20px) !important;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding-top: 20px;
 }
