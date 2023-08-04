@@ -22,7 +22,8 @@
     "dev": "nodemon server.js",
     "prod": "node server.js",
     "start:front": "react-scripts start",
-    "start": "npm run build && npm run prod",
+    "start": "node server.js",
+    "postinstall": "npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
